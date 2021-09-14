@@ -1,0 +1,13 @@
+{{#if error}}
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        {{error}}<!--agrego el texto con el string que setee en el controlador-->
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+{{/if}}
+
+{{#each error_msg}}
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        {{text}}<!--agrego el texto con el string que setee en el controlador-->
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+{{/each}}

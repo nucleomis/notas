@@ -1,0 +1,30 @@
+*express: motor de plantillas en el servidor, de forma que se puede extender el html y poder aplicar 
+logica en ella ya que html no cuenta con esto(Express, es un marco de aplicación web de back-end 
+para Node.js, lanzado como software gratuito y de código abierto bajo 
+la licencia MIT. Está diseñado para crear aplicaciones web y API. 
+Se le ha llamado el marco de servidor estándar de facto para Node.js. )
+
+*express-handlebars: Básicamente se trata de crear un módulo que tiene una única
+ función que sirve para obtener un template y compilarlo. Este módulo es el
+ único de mi aplicación que conoce a Handlebars y toda plantilla que necesite usar se la pido a él
+
+*express-session: El middleware express-session almacena los datos de sesión en el servidor;
+ sólo guarda el ID de sesión en la propia cookie, no los datos de sesión. De forma 
+predeterminada, utiliza el almacenamiento en memoria y no está diseñado para un entorno de producción.
+
+*method-override: esta libreria extiende la funcionalidad de los formularios, como por ejemplo el metodo put
+ y el metodo delete, que se envian a travez de metodos ajax o metodos javascript ya que los formularios por si solo
+no lo pueden hacer
+
+*mongoose: es un modulo que nos permite unir a express con la base de datos de mongoDb
+
+*passport: modulos para poder autenticar al usuario
+
+*passport-local: 
+
+*bcryptjs: modulo que permite encriptar el texto que se determine y asi convertirlo en un hash la idea es poder cifrar la 
+contraseña del usuario
+
+*connect-flash: modulo que sirve para poder realizar el envio de paquetes de datos entre vistas
+
+*nodemond-D : permite reiniciar el servidor cuando se modifica el codigo sin necesidad de cerrar y reiniciarlo de manera manual

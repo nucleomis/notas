@@ -1,0 +1,13 @@
+* npm run dev: para iniciar el servidor
+
+*mongod : para iniciar el controlador de la base de datos
+
+
+
+***si el puerto 3000 esta ocupado****
+
+para eliminar el servicio que esta ocupando ese puerto hay que usar los siguientes comandos en la terminal o consola cmd
+
+netstat -ano    :  lista todos los servicios que estan en ejecucion(ver el puerto y que PID es el identificador)
+
+taskkill /PID "PID" /F    : donde PID es el numero identificador para eliminar el proceso que ocupa el puerto

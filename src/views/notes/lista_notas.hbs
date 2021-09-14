@@ -1,0 +1,34 @@
+<div class="row">
+    
+        {{#each notas}}
+            <div class="col-md-3 mt-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title d-flex justify-content-between">
+                                {{titulo}}<a href="/notes/editar/{{_id}}" ><i class="fas fa-edit"></i></a>
+                            </h4>
+                            <p>{{descripcion}}</p>
+                            <div class="d-grid gap-1 mt-3">
+                                <form action="/notes/borrar/{{_id}}?_method=DELETE" method="POST"><!--pruebo pasar el metodo delete para borrar-->
+                                    <input type="hidden" name="_method" value="DELETE"><!--input oculto para donde envia la peticion delete-->
+                                    <button  class="btn btn-danger btn-block btn-sm" type="submit">Borrar</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+            </div> 
+             {{else}}
+                    <div class="col-md-4 mx-auto mt-3">
+                        <div class="card">
+                                <div class="card-body">
+                                    <div class="card-header text-center">NO HAY NOTAS AUN</div>
+                                <h3 class="text-center">Agregue una nueva tarjeta</h3>
+                                    <div class="d-grid gap-1 mt-3">
+                                        <a href="/notes/agregar_nota" class="btn btn-success">Crear una nota</a>
+                                    </div>
+                                </div>
+                            
+                        </div>
+                </div>   
+        {{/each}} 
+</div>

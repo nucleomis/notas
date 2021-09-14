@@ -1,0 +1,43 @@
+se va a utilizar como base de datos a mongodb para ello lo descargamos de la pagina oficial y lo instalamos version 4.2.16 para win 7
+
+comando para la instalacion en el directorio del proyecto: npm install mongodb
+
+
+la carpeta src es la carpeta donde vamos a colocar los recursos de la pagina, cada directorio dentro de esta carpeta
+tiene una finalidad especifica para nuestro servidor. 
+Por ejemplo:
+* el directorio views va a tener todas las vistas que
+se van a enviar el navegador como respuesta, es decir, contiene todas las paginas html, aunque en el proyecto se utilicen 
+handlebars que es el motor de plantillas, al final todo se convierte a html.
+*routes va a contener todas las url por ejemplo la ruta login, register, notes(para que el usuario agregue las notas)
+*public es para insertar todos los archivos staticos como imagenes fuentes estilos archivos javascript etc
+*models para definir como y que tipo de datos van a tener las tablas convertidas a clases de javascript
+*helpers por convencion es para poder utilizar o almacenar funciones que nos permiten ser reutilizadas, como por ejemplo crea
+numeros al azar o alguna otra funcion especifica que necesitaresmo usar mas de una vez, basicamente son funciones complementarias
+
+-------------------------------------------------------------------------------------------------------------------
+*para el comportamiento de las paginas voy a usar handlebars que son:
+
+ Express nos permite configurar el framework para que podamos trabajar 
+con diferentes motores de plantillas, como es el caso de Handlebars que es una 
+extensión de Mustache.js y es un motor de plantillas muy popular ya que es basado en JavaScript y 
+podemos utilizarlo tanto en lado servidor como en el cliente.
+ Handlebars es una historia diferente a Jade, 
+su forma de trabajo es similar a otros motores como Jinja2 o Swig, 
+ya que nos permite escribir etiquetas HTML y luego dentro con código del motor 
+propio podemos definir que imprime del contexto y la forma en que lo hace
+
+-------ventajas de usar motores de plantillas-------
+Ahora veamos que ganaremos al implementar soluciones como Handlebars en nuestras aplicaciones con Express:
+
+**El código resultante es más organizado, y tenemos garantía que no habrá HTML mal formado.
+
+**Podemos separar nuestro equipo en dos, al trabajar interfaces de usuario sin necesidad de desarrollar en Back-End.
+
+**Los motores de plantilla nos permiten reutilizar secciones de código ayudando así a mantener nuestro proyecto optimizado.
+
+**Existen muchas utilidades que nos ayudan a dotar de mejor interacción la parte visual de nuestras aplicaciones.
+
+**Cómo vemos lo que nos ofrecen los motores de plantilla es poder separar, optimizar y organizar nuestro código, 
+esto trae como consecuencia directa la mejora en la efectividad, eficiencia y productividad general en nuestro equipo 
+de desarrollo.
